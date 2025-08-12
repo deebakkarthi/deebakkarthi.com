@@ -1,0 +1,70 @@
+---
+title: Insights to Gather
+date: 2023-11-21T05:43:43-05:00
+---
+- Dataset: Yelp Dataset
+- Tables
+	- Business
+		- business_id
+		- name
+		- address
+		- city
+		- state
+		- postal code
+		- latitude
+		- longitude
+		- stars
+		- review_count
+		- is_open
+		- attributes
+		- categories
+		- hours
+	- Review
+		- review_id
+		- user_id
+		- business_id
+		- stars
+		- date
+		- text
+		- useful
+		- funny
+		- cool
+	- Users
+		- user_id
+		- name
+		- review_count
+		- yelping_since
+		- friends
+		- useful
+		- funny
+		- cool
+		- fans
+		- elite
+		- average_stars
+		- compliment_hot
+		- compliment_more
+		- compliment_profile
+		- compliment_cute
+		- compliment_list
+		- compliment_note
+		- compliment_plain
+		- compliment_cool
+		- compliment_funny
+		- compliment_writer
+		- compliment_photos
+	- Checkin
+		- business_id
+		- date
+	- Tips
+		- text
+		- date
+		- compliment_count
+		- business_id
+		- user_id
+	- Photos
+		- photo_id
+		- business_id
+		- caption
+		- label
+
+1. Correlation between the review_count and stars
