@@ -1,0 +1,15 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "assets",
+  "userIgnoreFilters": [
+    "public/"
+  ],
+  "livePreview": false,
+  "defaultViewMode": "preview",
+  "vimMode": true,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
+}

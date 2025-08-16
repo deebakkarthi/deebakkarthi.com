@@ -1,6 +1,9 @@
 ---
 title: Information Retrieval
 date: 2023-12-22T16:59:26-05:00
+tags:
+  - amrita
+  - moc
 ---
 
 # Class Notes

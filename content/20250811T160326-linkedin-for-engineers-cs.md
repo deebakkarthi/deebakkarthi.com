@@ -1,7 +1,9 @@
 ---
 title: Linkedin for Engineers and CS students
 date: 2025-08-11
-categories: job_hunting
+tags:
+  - career
+  - UVA
 ---
 # Three things that you absolutely need in a linkedin profile
 - Profile photo
@@ -50,8 +52,8 @@ categories: job_hunting
 
 # Groups to follow
 - Follow UVA's school page
-- Join *UVA Engineering alumni and friends*
-- Join *University of Virginia Alumni, student faculty and staff*
+- Join *[UVA Engineering alumni and friends](https://www.linkedin.com/groups/54544/)*
+- Join *[University of Virginia Alumni, student faculty and staff](https://www.linkedin.com/groups/74737/)*
 - When you join these groups, you can send message longer than 200 chars to UVA almuni
 - When using the alumni filter in UVA's school page *don't connect*. When you click connect it send a request without a note
   automatically. Note down their name and go to their profile and send a request with a note.

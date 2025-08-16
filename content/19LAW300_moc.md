@@ -1,6 +1,9 @@
 ---
 title: 19LAW300
 date: 2023-12-18T23:18:51-05:00
+tags:
+  - amrita
+  - moc
 ---
 
 # PPT Notes

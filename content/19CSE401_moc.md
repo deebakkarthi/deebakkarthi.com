@@ -1,6 +1,9 @@
 ---
 title: Compiler Design
 date: 2023-12-24T01:09:21-05:00
+tags:
+  - amrita
+  - moc
 ---
 # Lab
 - [ 2023-08-08](202309131222.md)

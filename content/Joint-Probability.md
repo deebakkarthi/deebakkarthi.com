@@ -1,3 +1,8 @@
+---
+title: Joint Probability
+date: 2023-09-13
+---
+
 Suppose we have two events $A$ and $B$. Joint probability is the probability of all possible pairs of the output. For example
 - A, B
 - B, A

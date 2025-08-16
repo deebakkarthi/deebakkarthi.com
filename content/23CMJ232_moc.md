@@ -1,6 +1,9 @@
 ---
 title: Mobile Video Production
 date: 2023-12-17T11:00:41-05:00
+tags:
+  - moc
+  - amrita
 ---
 
 # Script

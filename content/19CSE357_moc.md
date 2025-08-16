@@ -1,6 +1,9 @@
 ---
 title: Big Data Analytics
 date: 2023-12-20T07:00:25-05:00
+tags:
+  - amrita
+  - moc
 ---
 
 # Class Notes

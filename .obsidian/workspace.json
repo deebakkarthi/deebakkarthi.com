@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "b4bcf55b72aa7633",
+    "type": "split",
+    "children": [
+      {
+        "id": "7fd0265e2bf819fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5309b84a89ac3c38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/20250816T102750-add-missing-frontmatter-obsidian.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "20250816T102750-add-missing-frontmatter-obsidian"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a32540d6e5c9c373",
+    "type": "split",
+    "children": [
+      {
+        "id": "184a78a7f0122dce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93364f19a1e56c60",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "31c178fd881495c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "75856749d3dcb654",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0817d40e70f23b16",
+    "type": "split",
+    "children": [
+      {
+        "id": "a499db6c31969c6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32a5759ddd60955a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "226338caa218e01c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "5800a4f12ac1ae7d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "afb6d489f4550523",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "graph:Open graph view": false
+    }
+  },
+  "active": "5309b84a89ac3c38",
+  "lastOpenFiles": [
+    "public/tags/shell_scripting/index.xml",
+    "public/tags/shell_scripting/index.html",
+    "public/tags/shell_scripting",
+    "public/tags/shell/index.xml",
+    "public/tags/shell/index.html",
+    "public/tags/shell",
+    "public/tags/obsidian/index.xml",
+    "public/tags/obsidian/index.html",
+    "public/tags/obsidian",
+    "public/20250816t102750-add-missing-frontmatter-obsidian/index.html",
+    "public/20250816t102750-add-missing-frontmatter-obsidian",
+    "content/19CSE357_moc.md",
+    "content/20250816T102750-add-missing-frontmatter-obsidian.md",
+    "content/20240410101619-pytorch.md",
+    "content/archive.md",
+    "content/Joint-Probability.md",
+    "content/Kotlin-Workshop.md",
+    "content/semester_7_moc.md",
+    "templates/post.md",
+    "content/license.md",
+    "content/python_moc.md",
+    "content/_index.md",
+    "content/19CSE401_moc.md",
+    "content/19CSE453_moc.md",
+    "content/19CSE454_moc.md",
+    "content/19LAW300_moc.md",
+    "content/23CMJ232_moc.md",
+    "content/20231020135357-kanban_moc.md",
+    "content/20250815T201828-amrita_moc.md",
+    "content/20250811T160326-linkedin-for-engineers-cs.md",
+    "content/20250813T145755-career-prep-for-new-grads.md",
+    "content/20250814T140546-Technical Interviewing Workshop with Holly Zhou.md",
+    "content/20250815T154452-cv.md",
+    "public/assets/Pasted image 20231121143626.png",
+    "public/assets/Pasted image 20231121143353.png",
+    "public/assets/Pasted image 20231121142433.png",
+    "public/assets/Pasted image 20231121142036.png",
+    "public/assets/Pasted image 20231121140227.png",
+    "public/assets/Pasted image 20231121123849.png",
+    "public/assets/Pasted image 20231121135348.png",
+    "public/assets/Pasted image 20231121132531.png",
+    "public/assets/Pasted image 20231121113739.png",
+    "public/assets/Pasted image 20231004123218.png",
+    "public/assets/BDA Midterm Scope.canvas",
+    "public/assets/20230930122606-ir_scope.canvas",
+    "content/20231010153357-ll1_parsing.md",
+    "content/202309141554-N-Grams.md",
+    "content/20231126225725-final_year_moc.md"
+  ]
+}

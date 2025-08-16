@@ -1,6 +1,9 @@
 ---
 title: Natural Language Processing
 date: 2023-12-26T03:09:00-05:00
+tags:
+  - amrita
+  - moc
 ---
 
 # Lab
