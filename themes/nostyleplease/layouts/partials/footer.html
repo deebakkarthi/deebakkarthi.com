@@ -3,4 +3,9 @@
     <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
     <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
     <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
+    <br/>
+    {{ if ne .RelPermalink "/license/" }}
+    Read <a href="/license">License</a> for more information.
+    {{end}}
+
 </footer>

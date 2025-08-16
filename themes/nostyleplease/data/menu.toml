@@ -8,5 +8,9 @@ title = "Recent posts"
   #show_more_url = "posts"
 
 [[entries]]
+title = "Tags"
+url = "/tags"
+
+[[entries]]
 title = "rss"
 url = "index.xml"
