@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7fd0265e2bf819fd",
+        "id": "d15433353b1203b6",
         "type": "tabs",
         "children": [
           {
-            "id": "5309b84a89ac3c38",
+            "id": "a2948351d2b48d25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/20250816T102750-add-missing-frontmatter-obsidian.md",
-                "mode": "preview",
+                "file": "content/20250817T110704-cora_moc.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "20250816T102750-add-missing-frontmatter-obsidian"
+              "title": "20250817T110704-cora_moc"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cora_moc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 373.5
   },
   "right": {
     "id": "0817d40e70f23b16",
@@ -94,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/20250817T110704-cora_moc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 20250817T110704-cora_moc"
             }
           },
           {
@@ -159,58 +161,66 @@
     "hiddenItems": {
       "command-palette:Open command palette": false,
       "zk-prefixer:Create new unique note": false,
-      "graph:Open graph view": false
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5309b84a89ac3c38",
+  "active": "a2948351d2b48d25",
   "lastOpenFiles": [
-    "public/tags/shell_scripting/index.xml",
-    "public/tags/shell_scripting/index.html",
-    "public/tags/shell_scripting",
-    "public/tags/shell/index.xml",
-    "public/tags/shell/index.html",
-    "public/tags/shell",
-    "public/tags/obsidian/index.xml",
-    "public/tags/obsidian/index.html",
-    "public/tags/obsidian",
-    "public/20250816t102750-add-missing-frontmatter-obsidian/index.html",
-    "public/20250816t102750-add-missing-frontmatter-obsidian",
-    "content/19CSE357_moc.md",
-    "content/20250816T102750-add-missing-frontmatter-obsidian.md",
-    "content/20240410101619-pytorch.md",
-    "content/archive.md",
-    "content/Joint-Probability.md",
-    "content/Kotlin-Workshop.md",
-    "content/semester_7_moc.md",
-    "templates/post.md",
-    "content/license.md",
-    "content/python_moc.md",
-    "content/_index.md",
-    "content/19CSE401_moc.md",
-    "content/19CSE453_moc.md",
-    "content/19CSE454_moc.md",
-    "content/19LAW300_moc.md",
-    "content/23CMJ232_moc.md",
-    "content/20231020135357-kanban_moc.md",
-    "content/20250815T201828-amrita_moc.md",
+    "public/tags/projects/index.xml",
+    "public/tags/projects/index.html",
+    "public/tags/projects",
+    "public/20250817t125851-setup-coraclient-on-a-vps/index.html",
+    "public/20250817t125851-setup-coraclient-on-a-vps",
+    "public/20250817t123235-cora-azure-instructions/index.html",
+    "public/20250817t123235-cora-azure-instructions",
+    "content/20250817T125851-setup-coraclient-on-a-vps.md",
+    "content/20250817T110704-cora_moc.md",
+    "content/20250816T213232-setup-coraserver-on-a-vps.md",
+    "content/20250817T123235-cora-azure-instructions.md",
+    "content/20240130191938-git-moc.md",
+    "public/20250817t110704-cora_moc/index.html",
+    "public/20250817t110704-cora_moc",
+    "public/assets/Pasted image 20250817112133.png",
+    "public/assets/Pasted image 20250817112208.png",
+    "public/assets/Pasted image 20250817112121.png",
+    "public/assets/Pasted image 20250817111809.png",
+    "public/assets/Pasted image 20250817111746.png",
+    "public/assets/Pasted image 20250817111732.png",
+    "public/tags/project/index.xml",
+    "public/tags/project/index.html",
+    "public/assets/Pasted image 20250817112301.png",
+    "public/assets/Pasted image 20250817111625.png",
+    "public/assets/Pasted image 20250817111540.png",
+    "assets/Pasted image 20250817112301.png",
     "content/20250811T160326-linkedin-for-engineers-cs.md",
+    "content/20250816T142512-career-center_moc.md",
+    "content/20250816T142409-uva_moc.md",
+    "content/_index.md",
+    "content/19CSE311_notes.md",
+    "content/Untitled.md",
+    "content/Haskell.md",
+    "content/Average.md",
+    "content/archive.md",
+    "content/20250815T201828-amrita_moc.md",
+    "content/semester_6_moc.md",
     "content/20250813T145755-career-prep-for-new-grads.md",
-    "content/20250814T140546-Technical Interviewing Workshop with Holly Zhou.md",
-    "content/20250815T154452-cv.md",
-    "public/assets/Pasted image 20231121143626.png",
-    "public/assets/Pasted image 20231121143353.png",
-    "public/assets/Pasted image 20231121142433.png",
-    "public/assets/Pasted image 20231121142036.png",
-    "public/assets/Pasted image 20231121140227.png",
-    "public/assets/Pasted image 20231121123849.png",
-    "public/assets/Pasted image 20231121135348.png",
-    "public/assets/Pasted image 20231121132531.png",
-    "public/assets/Pasted image 20231121113739.png",
-    "public/assets/Pasted image 20231004123218.png",
+    "content/19CSE311_moc.md",
+    "content/19CSE456_case_notes.md",
+    "content/19CSE456_moc.md",
+    "content/19CSE446_moc.md",
+    "content/19CSE446_lab_notes.md",
+    "content/19CSE314_moc.md",
+    "content/19CSE314_project.md",
+    "content/19CSE314_notes.md",
+    "content/19CSE446 MOC.canvas",
+    "content/19CSE314 MOC.canvas",
+    "content/19CSE312 MOC.canvas",
+    "public/19CSE446 MOC.canvas",
+    "public/19CSE314 MOC.canvas",
+    "public/19CSE312 MOC.canvas",
     "public/assets/BDA Midterm Scope.canvas",
-    "public/assets/20230930122606-ir_scope.canvas",
-    "content/20231010153357-ll1_parsing.md",
-    "content/202309141554-N-Grams.md",
-    "content/20231126225725-final_year_moc.md"
+    "public/assets/20230930122606-ir_scope.canvas"
   ]
 }

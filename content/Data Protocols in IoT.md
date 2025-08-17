@@ -1,0 +1,108 @@
+---
+title: Data Protocols in IoT
+date: 2023-06-25T02:06:28-04:00
+---
+
+- Differentiate the traditional network stack with that of IoT
+- What the different layers in the IoT stack?
+# HTTP
+- What were new in HTTP/1.1?
+- What are the two types of HTTP messages?
+- HTTP request message format
+- HTTP response message format
+- What are the two ways to send input data to a website?
+- What are the different methods in HTTP/1.0?
+- What are the different methods in HTTP/1.1?
+- Give some status codes and their meanings
+	- 200
+	- 301
+	- 400
+	- 404
+	- 505
+- What is the full form of REST?
+- Explain each term in the REST acronym
+- What is a REST API?
+- What is HTTP short polling?
+- What is HTTP long polling?
+- What is HTTP periodic polling?
+- What is the disadvantage with using HTTP periodic polling?
+- What is HTTP streaming?
+- What are the issues with HTTP streaming?
+- What are SSE?
+- How is SSE implemented/improved in HTTP/2?
+# Websockets
+- What is the functionality of a websocket?
+- What is the notable advantage of websocket?
+- What are the issues of HTTP that is solved by websocket?
+- Differentiate HTTP and websockets
+- How does websocket interop with legacy HTTP?
+- What are the HTTP header fields needed to indicate the upgrade to websocket?
+- What is the response code to indicate that the protocol has changed?
+- How is data transferred in a websocket?
+- How to avoid confusing the network intermediaries while using websockets?
+- How can you save on bandwidth by switching to websockets
+- How can you communicate privately using websockets
+- How do you initialize a websocket in javascript
+- How do you send data through a websocket in javascript
+- Mention some of the events associated with websockets in javascript
+- Is it a good idea to use threaded servers for websockets?
+- What is the alternative to threaded servers for handling websockets? Give some language specific implementation examples
+- Mention three reasons why we need websockets
+# MQTT 
+- Mention the key difference between MQTT and HTTP
+- What model of communication is used by MQTT
+- Which protocol is faster MQTT/ or HTTP
+- What are the 3 levels of QoS offered by MQTT
+- Map the QoS to their appropriate integers
+- What is a free will in MQTT?
+- What is a testament in MQTT?
+- What are the methods in MQTT
+- What is the size of an MQTT packet?
+- What are the three component of a MQTT system?
+- Do the publisher and the subscriber know of the existence of one another?
+- Explain the dimensions in which pub/sub are decoupled?
+- Explain how you would scale a pub/sub model?
+- How to scale up to a million subscribers
+- Explain the different types of filtering provided by a MQTT broker
+- Downside of content based filtering
+- What is an MQTT client
+- Can an MQTT client both be a subscriber and a publisher at the same time?
+- What is an MQTT broker
+- Mention some of the functionalities provided by a MQTT broker
+- Explain the connection initiation phase of MQTT
+- Is MQTT persistent
+- What is a topic
+- Is `"/home/office" == "/home/Office"` in the context of MQTT topics
+- Will there be an issue interfacing a client behind a NAT and an MQTT broker
+- Give the structure of an MQTT `CONNECT` message
+- How to implement a stateless MQTT connection
+- Under what condition is leaving the `clientId` empty prohibited
+- What happens when `cleanSession` is false?
+- What happens when `cleanSession` is true?
+- What is the concern with using the inbuilt `username` and `password` fields of the MQTT packet
+- How to authenticate without using any `username/password`?
+- Give the structure of MQTT `CONNACK` message
+- What are some MQTT `CONNACK` return codes and their meanings
+- Give the structure of MQTT `PUBLISH` message
+- Give the structure of MQTT `SUBSCRIBE` message
+# Constrained devices/networks
+- What is a constrained device
+- What is a constrained network
+- What are the different class of devices
+- Classify devices based on energy
+- What are the three phases of evolution of constrained devices in IoT
+# CoAP
+- What transport layer protocol does CoAP use?
+- What is the size of the CoAP header?
+- How to ensure reliable delivery of messages in CoAP?
+- Suppose I don't care about reliable delivery of every single message and don't want to waste the bandwidth needed for ACKing messages. What can I do ?
+- How to detect duplicate messages?
+- How is retransmission handled in CoAP
+- What is an response only message in CoAP?
+- Explain the CoAP Header structure?
+- What are the 4 types of messages in CoAP?
+- How to implement caching in the CoAP Proxy?
+- How does CoAP deal with periodic data?
+- Why do we need block transfer in CoAP?
+- Explain the `block2`'s options in CoAP
+- How to discover resources hosted by a CoAP server?

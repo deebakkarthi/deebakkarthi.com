@@ -1,0 +1,76 @@
+---
+title: Haskell Environment
+date: 2023-07-02T20:55:57-04:00
+---
+
+- Describe Haskell as a language
+	- polymorphic
+	- statically typed
+	- lazy
+	- purely functional
+- How to import a module into GHCi
+	- `:module moduleName`
+- What are the logical operators
+	- `&&`
+	- `||`
+	- `not` a function
+- What is the not equal to operator in Haskell
+	- `\=`
+- How is precedence represented in Haskell
+	- Numeric
+	- 1 to 9
+	- 1 is low
+	- 9 is high
+- How to know the associativity of an operator in GHCi
+	- `:info operator`
+- How is associativity represented in Haskell
+	- `infixl` for left
+	- `infixr` for right
+- What is the name of Haskell's standard library?
+	- Prelude
+- Function for exponentiation
+	- `exp`
+- What is the result of the following expression `"" == []`
+	- True
+	- a string is just a list of char
+- What is list enumeration in Haskell
+	- By using the `..` we can enumerate a list given it start and end
+- How would you specify the step size when using list enumeration
+	- If we give a second element, the difference between them is kept as the difference of the resultant list
+- Consider the following code `[1, 3 .. 10] == [1.0, 3.0, 5.0, 7.0, 9.0, 11.0`. What is the reason for this strange behavior?
+	- `..` is just syntactic sugar for `EnumFromThenTo`
+	- `EnumFromThenTo e1 e2 e3` is defined to stop when the value is greater than `e3 + i/2` where `i` is `e2-e1` or lesser than `e3 + i/2` for negative `i`
+	- That is the reason for this strange behavior 
+- What is the significance of `it` in GHCi
+	- Stores the last computed result
+- How to store fractions
+	- using `Data.Ratio`
+	- `22 % 7`
+- Describe the type system of Haskell
+	- Strong
+	- Static
+	- Automatically inferred
+- Two key differences between Lists and tuples
+	- Size
+	- Homogeneity of types 
+- What is the default associativity in Haskell
+	- left
+	- `a b c d` is equivalent to `(((a(b)) c) d)`
+- How do you spot a impure function in Haskell
+	- `IO` will be it's return type
+- Is Haskell strict or non-strict
+	- Haskell is non-strict
+	- Expressions are evaluated lazily 
+- How does Haskell keep track of all the expressions to be executed?
+	- Thunk
+- Pros and cons of lazy-eval
+	- Always takes lesser than or equal number of steps to eager eval
+	- Very useful when only a part of the expression is needed
+	- Memory consumption may be very high
+- How to print to stdout
+	- `putStrLn`
+	- `print`
+- How to get input in Haskell
+	- `x <- readLine`
+- How to check time in runtime (not GHCi)
+	- Using `typeof` from `Data.Typeable`

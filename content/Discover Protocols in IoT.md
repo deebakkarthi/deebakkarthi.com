@@ -1,0 +1,35 @@
+---
+title: Discover Protocols in IoT
+date: 2023-06-25T04:39:36-04:00
+---
+
+- How are resources discovered in traditional networks?
+- What are the services offered by DNS
+- Why can't we centralize DNS
+- What are 4 types of DNS servers
+- How is DNS being cached
+- What is the general Resource record format
+- what is a TXT record
+- What is a SRV record
+- What are the restrictions on the type of value that a SRV record points to
+- Is there any difference between DNS query and reply message formats?
+- What is the DNS message format
+- How to attack DNS
+- What is an resource
+- What are the key features of discovery protocols
+- What are the components of zero config networking
+- What is LLA
+- LLA ranges for IPv4 and IPv6
+- Mention the key difference between LLA in IPv4 and IPv6
+- What is mDNS
+- mDNS IP and port
+- What are the advantages of mDNS
+- What the three types of mDNS query behaviors
+- How to do one shot queries using dig
+- What is answer suppression in mDNS
+- How to remove a name in mDNS
+- How to announce a name in mDNS
+- How to handle name collisions in mDNS
+- How does DNS-SD work?
+- What is the query structure of DNS-SD
+- Possible issues with DNS-SD

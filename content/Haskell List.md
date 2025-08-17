@@ -1,0 +1,37 @@
+---
+title: Haskell List
+date: 2023-07-02T21:08:33-04:00
+---
+
+- Mention the three types of list in haskell
+	- Undefined
+	- Empty
+	- Partial
+- Give an example for list comprehension
+	- `[x*x | x <- [1..10]]`
+- Difference between `**` and `^`
+	- `^` is used for integer exponentiation 
+	- `**` is used for floating point exponentiation 
+- What are the three parts to a list comprehension
+	- `[resultant expr | list to be iterated, filter]`
+	- `[x*x | x <- [1..10], odd x]`
+- Can we have multiple predicates for list comprehension
+	- Yes
+- Can we take elements from multiple sets ?
+	- Yes
+	- `[x * y | x <- xs, y <-ys, odd x, even y]`
+- What function is used to check for empty list
+	- `null xs`
+- How to access a particular index in haskell?
+	- Using `!!`
+- Type of indexing?
+	- 0-based
+- How does comparison (>, <) work in list
+	- The comparison is lexicographic
+- What does `cycle` do?
+	- Repeats a list infinitely 
+- What does `repeat` do
+	- Repeats an *element* infinitely
+- What does replicate do
+	- `replicate numItems fillItem`
+	- creates a list full of `fillItem`. There will be `numItems` number of elements

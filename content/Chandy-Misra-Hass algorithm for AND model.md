@@ -1,0 +1,40 @@
+---
+title: Chandy-Misra-Hass algorithm for AND model
+date: 2023-09-06T01:50:40-04:00
+---
+
+- _Classify this based on the [Distributed Deadlock Detection](Distributed%20Deadlock%20Detection.md)_
+	- Edge-chasing
+- _What is the name of the special message_
+	- Probe
+- _Explain the structure of the message used_
+	- `(i,j,k)` indicating
+		- $P_i$ initiated
+		- Home site of $P_j$ is the sender
+		- Home site of $P_k$ is the receiver
+- _What does it mean when a process is said to be dependent on another in mathematical terms ?_
+	- There exists a sequence $P_i, P_j, \ldots, P_n$ such that every process except $P_n$ is blocked and every process except $P_i$ has a resource that the previous process waits for
+- _What is local dependency_?
+	- If a process is dependent on another and they belong to the same site then they are said to be __locally dependent__
+- _What is the data structure used here?_
+	- An array known as `dependent[]` where the $i^{th}$ index corresponds to $P_i$ being dependent on it
+- _Give the Chandy-Misra-Hass algorithm ?_
+	- Sender
+		- if $dependent_i(i) == true$ declare deadlock
+		- else for all pairs of processes $P_j$ and $P_k$ that satisfy the following
+			- $P_i$ is locally dependent on $P_j$
+			- $P_j$ is waiting for $P_k$
+			- $P_j$ and $P_k$ are on different sites
+		- Send probe message `(i, j, k)`
+	- Receiver
+		- When a site receives a probe message `(i, j, k)` it checks the following,
+			- $P_k$ is idle
+			- $dependent_k(j) == false$
+			- $P_k$ hasn't responded to $P_j$
+		- If the above conditions are met, for ever pair $P_m$ and $P_n$ that satisfy the following
+			- $P_k$ is locally dependent on $P_m$
+			- $P_m$ is waiting for $P_n$
+			- $P_m$ and $P_n$ are on different sites
+		- Send probe messages `(i, m, n)`
+- _What is the complexity of this algorithm_
+	- $\mathcal{O}(m\times n)$ where $m$ is the number of process and $n$ is the number of sites

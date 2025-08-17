@@ -3,3 +3,4 @@ assets/
 resources/
 .hugo_build.lock
 .DS_Store
+scripts/priv.sh
