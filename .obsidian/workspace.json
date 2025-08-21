@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d15433353b1203b6",
+        "id": "e1631234748023f7",
         "type": "tabs",
         "children": [
           {
-            "id": "a2948351d2b48d25",
+            "id": "e74e1fb3656e291e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/20250817T110704-cora_moc.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "20250817T110704-cora_moc"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cora_moc",
+                "query": "leetcode_moc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/20250817T110704-cora_moc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 20250817T110704-cora_moc"
+              "title": "Backlinks"
             }
           },
           {
@@ -159,6 +154,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "command-palette:Open command palette": false,
       "zk-prefixer:Create new unique note": false,
       "graph:Open graph view": false,
@@ -166,8 +162,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a2948351d2b48d25",
+  "active": "e74e1fb3656e291e",
   "lastOpenFiles": [
+    "content/20250821T070255-lc242-valid-anagram.md",
+    "content/20250821T061017-leetcode_moc.md",
+    "content/Untitled.md",
+    "content/20250821T063200-lc217-contains-duplicate.md",
+    "content/20250818T133418-setup-carzone-on-a-vps.md",
+    "content/20250815T201828-amrita_moc.md",
+    "content/_index.md",
+    "content/20250817T110704-cora_moc.md",
     "public/tags/projects/index.xml",
     "public/tags/projects/index.html",
     "public/tags/projects",
@@ -176,7 +180,6 @@
     "public/20250817t123235-cora-azure-instructions/index.html",
     "public/20250817t123235-cora-azure-instructions",
     "content/20250817T125851-setup-coraclient-on-a-vps.md",
-    "content/20250817T110704-cora_moc.md",
     "content/20250816T213232-setup-coraserver-on-a-vps.md",
     "content/20250817T123235-cora-azure-instructions.md",
     "content/20240130191938-git-moc.md",
@@ -189,7 +192,6 @@
     "public/assets/Pasted image 20250817111746.png",
     "public/assets/Pasted image 20250817111732.png",
     "public/tags/project/index.xml",
-    "public/tags/project/index.html",
     "public/assets/Pasted image 20250817112301.png",
     "public/assets/Pasted image 20250817111625.png",
     "public/assets/Pasted image 20250817111540.png",
@@ -197,13 +199,10 @@
     "content/20250811T160326-linkedin-for-engineers-cs.md",
     "content/20250816T142512-career-center_moc.md",
     "content/20250816T142409-uva_moc.md",
-    "content/_index.md",
     "content/19CSE311_notes.md",
-    "content/Untitled.md",
     "content/Haskell.md",
     "content/Average.md",
     "content/archive.md",
-    "content/20250815T201828-amrita_moc.md",
     "content/semester_6_moc.md",
     "content/20250813T145755-career-prep-for-new-grads.md",
     "content/19CSE311_moc.md",
@@ -211,9 +210,6 @@
     "content/19CSE456_moc.md",
     "content/19CSE446_moc.md",
     "content/19CSE446_lab_notes.md",
-    "content/19CSE314_moc.md",
-    "content/19CSE314_project.md",
-    "content/19CSE314_notes.md",
     "content/19CSE446 MOC.canvas",
     "content/19CSE314 MOC.canvas",
     "content/19CSE312 MOC.canvas",
