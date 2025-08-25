@@ -1,0 +1,121 @@
+---
+title: Concurrency in Java
+date: 2023-09-06T01:50:40-04:00
+---
+
+- What is concurrency?
+	 - Concurrency is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the outcome
+- How are concurrent programs executed on a single CPU?
+	 - Using time-slices
+- Distinguish between concurrency and parallelism
+	 - Concurrency can be thought of as a way of structuring a program so that two threads can start, run and complete in *overlapping time periods*
+	 - Parallelism is the *runtime behavior* of some concurrent programs where two or more threads are running simultaneously
+- Differentiate processes and threads
+	 - Can a process access data of another process?
+	 - Can a thread access data of another thread?
+- What are the two main problems when dealing with thread?
+	 - Visibility
+	 - Access
+- What is the visibility problem?
+- What is the access problem?
+- What does access and visibility problems lead to?
+- What is starvation
+- What is fairness
+- What are the three causes of starvation in Java
+- What is multitasking
+- What is multi-threading
+- What is the lineage of multi-threading and multitasking
+	 - Time sharing system
+- Draw the life cycle of  a Java thread
+	- ![Pasted image 20230702130830](../assets/Pasted%20image%2020230702130830.png)
+	
+- What are the two states of an active thread?
+	- Running
+	- Runnable
+- How to move from running to runnable?
+	- using the `yield()` method
+- What does `yield` do?
+	- `yield` indicates to the scheduler that the current thread is willing to relinquish its current use of the processor but it would like to get back to running ASAP
+	- The scheduler is free to schedule it whenever it wants
+- What are the two types of `wait` in Java threads?
+- What is the range of Java thread priorities and give the name of the constants
+	 - `MIN_PRIORITY` => 1
+	 - `MAX_PRIORITY` => 10
+- What is the value given by default to thread and the name of the constant that identifies it
+	 - `NORM_PRIORITY` => 5
+- Can thread priorities guarantee the order of execution
+	 - No. It is platform-dependent
+ - What method is used to set the priority of a thread?
+	 - `setPriority()`
+- How do you create a concurrent program in Java using the `Runnable` interface?
+	 - Create a class that implements the `Runnable` interface and implement the `run()` method
+	 - Create a `Thread` object with the constructor signature of `new Thread(Runnable obj, String threadName)`
+	 - Call the `start()` method
+- How do you create a concurrent program in Java extending the `Thread` class?
+	 - Create a class that *extends* the `Thread` class
+	 - Override the `run()` method
+	 - Create an object of the above class and call the `start()` method
+- What is the preferred way to do concurrency in Java - `Thread` vs `Runnable`?
+	 - Implementing `Runnable` is the preferred way to do it
+	 - Reasons
+		 - From a OOP POV we are not trying to *overwrite or extend* any behavior of the `Thread` class. Rather we just giving it something to run.
+		 - So *Composition* is the proper way to do it.
+		 - Another key things is *Inheritance*. Java doesn't support multiple Inheritance. So if we inherit from the `Thread` class we can't inherit from any other classes. But this is not the case if we are implementing the `Runnable` interface
+		 - `class MyClass extends MyParent implements Runnable ` is possible
+- Mention some of the methods on the `Thread` class
+	 - `suspend`
+	 - `stop`
+	 - `resume`
+	 - `wait`
+	 - `notify`
+- How is `suspend()` and `resume()` used
+	 - The thread is suspended until the `resume()` method is invoked
+- How is `wait()` and `notify()` used
+	 - The thread is suspended until the `notify()` method is invoked on the object's monitor
+- What is the difference in using `wait(), notify()` and `suspend(), resume()`
+	 - `suspend(), resume()` stop and start the thread
+	 - The purpose of `wait(), notify()` is completely different. `wait()` is used to wait for something to happen. It is usually used for *synchronization*
+- How do you scale when you have many threads to execute?
+	 - `java.lang.Runnable` doesn't scale well
+	 - One thread for each task may add so much overhead that the point of multi-threading is moot
+	 - The solution is the use of *thread pools*
+	 - In Java this can be accomplished by implementing `java.util.concurrent.Executor` interface
+	 - `java.util.concurrent.ExecutorService` interface is used to control the execution of the thread pool
+- How do you declare a *thread-safe* method in java?
+	  - `public`**`synchronized`**`void myMethod()`
+- How does a synchronized method guarantee mutual exclusion?
+	  - Locks
+- The lock acquired for an instance method is ?
+	  - object
+- The lock acquired for an static method is ?
+	  - Class
+  - What are synchronized blocks?
+	  - They are a similar concept to a synchronized function
+	  - The lock of the object reference given will be acquired and mutual exclusion will be ensured
+- Differentiate between `Lock` and `ReentrantLock`
+	  - `Lock` is an interface
+	  - `ReentrantLock` is a concrete class that implements `Lock` plus some additional methods
+	  - `ReentrantLock`, as suggested by its name, is *re-entrant* meaning a process can acquire the lock held by itself without deadlocking
+  - How to create *fair* locks in java?
+	  - Instantiate the `ReentrantLock` object with `true` as a parameter
+- We know the signature of the `run` is `public void run()` meaning nothing is returned. Suppose you want the results of the computation to be returned. How to accomplish this?
+	  - Instead of using the `Runnable` interface, implement the `Callable` interface
+- What is the `Future` object?
+	- Used to check the status of a `Callable` and retrieve the results
+- What method would you use to get the results of a `Callable`
+	- `get()`
+- What is the syntax used for `Future` with `Callable`?
+	- `Future<type> myVar = executor.submit(threadObj)`
+- What is the way to implement truly parallel computation in java?
+	- Using the `ForkJoinTask` abstract class
+- What are the two concrete classes under `ForkJoinTask`?
+	- `RecursiveAction`
+	- `RecursiveTask`
+- What is the difference between `RecursiveAction` and `RecursiveTask`
+	- `RecursiveTask` returns the results
+- What does the `invoke()` method do?
+	- It first calls the `fork()`  and then waits to `join()`
+- What is the method that is overridden in the `ForkJoinTask`?
+	- The `compute` method should be overridden
+- We know that to efficiently use many thread we use thread pools. How to use those when using the Fork-Join framework?
+	- `ForkJoinPool` should be used
