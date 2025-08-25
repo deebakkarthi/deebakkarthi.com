@@ -1,0 +1,36 @@
+---
+title: Scala Basic Types and Operation
+date: 2023-07-02T13:55:29-04:00
+---
+
+- List some basic types of scala
+	- Byte
+	- Short
+	- Int
+	- Long
+	- Float
+	- Double
+	- Char
+	- String
+	- Boolean
+- What are Byte, Short, Int, Long, Char collectively called as?
+	- Integral types
+- What are the types under Numeric
+	- Integral + Float + Double
+- What are two ways to represent integral literals?
+	- decimal
+	- hexadecimal
+- How to specify that a literal is a Long
+	- Last character is an `L` or `l`
+- How to specify a Byte literal
+	- You can't. Just explicitly type the variable
+- Represent a floating point literal
+	- `3.14159E2`
+- What is the type of `1.234`
+	- Double
+ - How to get a literal of type Float
+	 - Add `F` or `f`
+ - Can you perform simple operation while using string substitution ?
+	 - Yes. `s"Hello user${4*5}"`
+ - What are rich wrappers
+	- They are wrapper classes over the standard types that provide enriched methods
