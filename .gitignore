@@ -9,3 +9,4 @@ resources/
 .DS_Store
 scripts/priv.sh
 content
+.obsidian/workspace.json
