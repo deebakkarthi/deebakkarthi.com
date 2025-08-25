@@ -1,0 +1,15 @@
+---
+title: 19LAW300
+date: 2023-12-18T23:18:51-05:00
+tags:
+  - amrita
+  - moc
+---
+
+# PPT Notes
+- [20231218201413-introduction](20231218201413-introduction.md)
+- [20231218202231-choices_made](20231218202231-choices_made.md)
+
+
+# Study Notes
+- [20231219094849-exam-prep](20231219094849-exam-prep.md)
