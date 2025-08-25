@@ -3,7 +3,6 @@ public/
 assets/
 data/
 i18n/
-layouts/
 resources/
 .hugo_build.lock
 .DS_Store
