@@ -1,0 +1,39 @@
+---
+title: Scala Recursion and Pattern Matching
+date: 2023-07-02T20:08:10-04:00
+---
+
+- What is tail recursion
+	- Recursion call is the last operation
+- How do you annotate tail recursion
+	- Import `scala.annotation._`
+	- Add `@tailrec` above the function declaration
+- Where are the input methods in scala?
+	- `scala.io.StdIn`
+- Give some methods for type-specific input
+	- `scala.io.StdIn.readInt`
+	- `scala.io.StdIn.readShort`
+	- `scala.io.StdIn.readLong`
+	- `scala.io.StdIn.readFloat`
+	- `scala.io.StdIn.readDouble`
+	- `scala.io.StdIn.readBoolean`
+- How to read an entire line
+	- `readLine()`
+- What is the equivalent to C's `scanf()` in scala
+	- `readf()`
+- What are `readf()2 and readf3()`
+	- Similar to `readf()` but return 2 or 3 values
+- How to use mutable lists in scala?
+	- `scala.collection.mutable.ListBuffer`
+- How do you add to a `ListBuffer`
+	- Using the `+=` operator
+- In pattern matching how to match an empty list?
+	- Using the `Nil` singleton object
+- What are pattern alternatives?
+	- Suppose we want the same set of statements for two or more cases
+	- We can delimit the cases using the `|` to combine them
+	- `case expr | expr | expr`
+- Why are pattern alternatives needed?
+	- Unlike in C, the matched cases doesn't *fall through*. So there is no way to represent common cases
+- Use if expressions to match range of values
+	- `case a if 1 to 10 contains a => println(a)`
