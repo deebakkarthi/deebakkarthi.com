@@ -1,0 +1,36 @@
+---
+title: Haskell HOF
+date: 2023-07-02T22:07:39-04:00
+---
+
+- What are HOF?
+	- A function that either
+		- Takes in another function as argument
+		- Returns another function
+- Officially how many parameters does every haskell function take?
+	- Only one
+	- Functions are curried in haskell
+	- Every function takes in one parameter and return another function which may take more params
+- What are lambda functions
+	- Anonymous functions
+- How to write lambda functions
+	- using `\(args -> expr)`
+- Differentiate `foldl` and `foldr`
+	- The func to `foldl` takes the `acc` first
+	- The func to `foldr` takes the `x` first
+	- Foldl won't work on infinite lists
+- What is `fold1`
+	- We don't have to give the accumulator value
+	- But will fail on empty lists even though normal `fold` doesn't fail
+- How would you make a function eval right associative
+	- Using the `$` operator
+	- `f a b c d` will be `((((f a) b) c) d)`
+	- To make it `f (a b c d)` we can use `f $ a b c d`
+- How to compose functions in haskell
+	- Using the `.` operator
+	- `f . g x` is equivalent to `f (g x)`
+- Write a map function that first negates the values and then takes the abs of the elements
+	- `map (negate . abs) xs`
+- Rewrite using dot notation `replicate 100 (product (map (*3) (zipWith max [1,2,3,4,5] [4,5,6,7,8])))`
+	- `replicate 100 product . map (*3) . zipWith max [1,2,3,4,5] $ [4,5,6,7,8]`
+	- $ is needed as the last function takes more than one parameter
