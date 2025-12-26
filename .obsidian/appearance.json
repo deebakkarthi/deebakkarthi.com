@@ -1,1 +1,9 @@
-{}
+{
+  "interfaceFontFamily": "Lucida Grande",
+  "textFontFamily": "Lucida Grande",
+  "monospaceFontFamily": "SF Mono",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "bigger-latex"
+  ]
+}
