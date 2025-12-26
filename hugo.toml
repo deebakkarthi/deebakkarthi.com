@@ -4,7 +4,9 @@ title = 'Deebakkarthi Chinnasame Rani'
 theme = 'nostyleplease'
 
 [markup.goldmark.renderHooks.image]
-enableDefault = true
+#enableDefault = true
+useEmbedded = "fallback"
 
 [markup.goldmark.renderHooks.link]
-enableDefault = true
+#enableDefault = true
+useEmbedded = "fallback"
