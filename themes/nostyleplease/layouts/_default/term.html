@@ -4,5 +4,7 @@
 <h1>{{ .Title }}</h1>
 
 {{ .Content }}
+<!--- This should be post_list because this will be under /tags/SOME_TAG
+Date should be visible here-->
 {{ partial "post_list.html" (dict "context" .)}}
 {{ end }}

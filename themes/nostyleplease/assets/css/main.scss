@@ -27,8 +27,9 @@
   pre {
     // bg-dim
     //background: #1e1e1e;
-    border: 5px solid $--highlight;
-    border-radius: 1px;
+    font-size: 14px;
+    border: 5px solid $--secondary-text-color;
+    border-radius: 10px;
   }
 
   code:not(pre > code) {
@@ -60,9 +61,8 @@
 // bg-color,primary-text-color,secondary-text-color,link-color,visited-link-color,highlight
 
 @mixin dark-appearance {
-  @include theme(#000000, #ffffff, #000000, #2fafff, #6ae4b9, #f78fe7); // modus-vivendi
+  @include theme(#000000, #ffffff, #595959, #2fafff, #6ae4b9, #f78fe7); // modus-vivendi
 }
-//  --modus-themes-color-blue:               #0031a9;
 
 
 @mixin light-appearance {
@@ -96,12 +96,22 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", "Times New Roman", serif;
+  font-kerning: auto;
   font-size: 16px;
-  line-height: 1.4;
+  font-optical-sizing: auto;
+  font-size-adjust: none;
+  line-height: 26px;
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+}
+
+
+.homepage_title{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
 }
 
 h2,
@@ -147,6 +157,7 @@ pre {
   overflow-x: auto;
   /* Fix pre content overflowing parent without scroll bar */
 }
+
 pre [data-line] {
   padding: 0 1rem;
 }
@@ -219,7 +230,7 @@ details[open] summary {
   padding: 4rem 2rem;
 }
 
-.back_home_text{
+.back_home_text {
   font-size: 2em;
 }
 
