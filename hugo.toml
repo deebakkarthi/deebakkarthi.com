@@ -10,3 +10,7 @@ useEmbedded = "fallback"
 [markup.goldmark.renderHooks.link]
 #enableDefault = true
 useEmbedded = "fallback"
+
+[markup]
+  [markup.highlight]
+        noClasses=false
