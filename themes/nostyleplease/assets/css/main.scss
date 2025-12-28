@@ -1,16 +1,41 @@
 // -------------- THEME SWITCHER -------------- //
-@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight) {
+@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight, $--red) {
   background-color: $--bg-color;
 
   color: $--primary-text-color;
 
   a {
+    text-decoration: none;
     color: $--link-color;
 
     &:visited {
       color: $--visited-link-color;
     }
+
+    &:visited:hover {
+      color: $--bg-color;
+      background-color: $--visited-link-color;
+    }
+
+    &:hover {
+      color: $--bg-color;
+      background-color: $--link-color;
+    }
+
+    &:active {
+      color: $--red;
+      background-color: $--bg-color;
+    }
+
+    &:active:hover {
+      color: $--red;
+      background-color: $--bg-color;
+    }
+
   }
+
+
+
 
   details {
     border: thin solid $--primary-text-color;
@@ -61,12 +86,12 @@
 // bg-color,primary-text-color,secondary-text-color,link-color,visited-link-color,highlight
 
 @mixin dark-appearance {
-  @include theme(#000000, #ffffff, #595959, #2fafff, #6ae4b9, #f78fe7); // modus-vivendi
+  @include theme(#000000, #ffffff, #595959, #2fafff, #6ae4b9, #f78fe7, #ff5f59); // modus-vivendi
 }
 
 
 @mixin light-appearance {
-  @include theme(#ffffff, #000000, #595959, #2fafff, #6ae4b9, #ff66ff); // modus-operandi
+  @include theme(#ffffff, #000000, #595959, #338fff, #008900, #ff66ff, #ff5f5f); // modus-operandi
 }
 
 body[a="dark"] {
@@ -108,10 +133,14 @@ body {
 }
 
 
-.homepage_title{
+.homepage_title {
   font-weight: 400;
   font-style: italic;
   font-size: 32px;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 h2,
@@ -119,6 +148,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   margin-top: 1.5rem;
 }
 
@@ -130,13 +160,7 @@ li {
   margin: 0.4rem 0;
 }
 
-a {
-  text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 hr {
   text-align: center;
