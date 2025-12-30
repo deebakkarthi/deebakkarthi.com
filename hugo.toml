@@ -12,5 +12,8 @@ useEmbedded = "fallback"
 useEmbedded = "fallback"
 
 [markup]
-  [markup.highlight]
-        noClasses=false
+        [markup.highlight]
+                noClasses=false
+        [markup.goldmark.renderer]
+                unsafe = true
+

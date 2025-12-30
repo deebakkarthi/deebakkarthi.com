@@ -9,3 +9,5 @@ resources/
 scripts/priv.sh
 content
 .obsidian/workspace.json
+.obsidian/plugins/
+.pandoc/

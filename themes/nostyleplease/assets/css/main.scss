@@ -162,7 +162,7 @@ li {
 
 
 
-hr {
+.footer-separator {
   text-align: center;
   border: 0;
   margin: 2rem 0;
@@ -264,4 +264,43 @@ details[open] summary {
 
 .site-footer {
   padding-top: 1rem;
+}
+
+
+.hltr-gray {
+  background: #CACFD9;
+}
+
+.hltr-magenta {
+  background: #F272D4;
+}
+
+.hltr-red {
+  background: #ED1842;
+}
+
+.hltr-yellow {
+  background: #FFEB4D;
+}
+
+.hltr-blue {
+  background: #24CAFF;
+}
+
+.hltr-green {
+  background: #29C800;
+}
+
+.hltr-purple {
+  background: #B272F2;
+}
+
+.hltr-orange {
+  background: #F25D27;
+}
+
+.hltr {
+  margin: 0 -0.05em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
 }
