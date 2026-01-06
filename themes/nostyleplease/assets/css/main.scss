@@ -304,3 +304,17 @@ details[open] summary {
   padding: 0.1em 0.4em;
   border-radius: 0.8em 0.3em;
 }
+
+.contact-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-list li {
+  display: inline-block;
+}
+
+.contact-list-separator {
+  margin-left: 5px;
+  margin-right: 5px;
+}

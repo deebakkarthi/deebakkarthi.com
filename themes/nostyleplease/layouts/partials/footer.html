@@ -1,11 +1,34 @@
 <footer class="site-footer">
-    <a href="https://www.deebakkarthi.com">deebakkarthi.com</a> © 2022 - {{ now.Format "2006" }} by Deebakkarthi Chinnasame Rani is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;display: inline;">
-    <br/>
-    {{ if ne .RelPermalink "/license/" }}
-    Read <a href="/license">License</a> for more information.
-    {{end}}
+  <ul class="contact-list">
+    <li> <a target="_blank" href="https://github.com/deebakkarthi">Github</a> </li>
+    <li class="contact-list-separator">◊</li>
+    <li> <a target="_blank" href="https://linkedin.com/in/deebakkarthi" >Linkedin</a > </li>
+    <li class="contact-list-separator">◊</li>
+    <li><a target="_blank" href="mailto:dbk@deebakkarthi.com">Mail</a></li>
+    <li class="contact-list-separator">◊</li>
+    <li> <a target="_blank" href="https://scholar.google.com/citations?user=b8PHYqAAAAAJ&hl=en" >Google Scholar</a >
+    </li>
+  </ul>
 
+  <a href="https://www.deebakkarthi.com">deebakkarthi.com</a> © 2022 - {{
+  now.Format "2006" }} by Deebakkarthi Chinnasame Rani is licensed under
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+  <img
+    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+    alt=""
+    style="max-width: 1em; max-height: 1em; margin-left: 0.2em; display: inline"
+  />
+  <img
+    src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+    alt=""
+    style="max-width: 1em; max-height: 1em; margin-left: 0.2em; display: inline"
+  />
+  <img
+    src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+    alt=""
+    style="max-width: 1em; max-height: 1em; margin-left: 0.2em; display: inline"
+  />
+  <br />
+  {{ if ne .RelPermalink "/license/" }} Read <a href="/license">License</a> for
+  more information. {{end}}
 </footer>
