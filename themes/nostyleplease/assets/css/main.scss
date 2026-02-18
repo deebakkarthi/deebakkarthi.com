@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "ETbb";
+  src: url("../fonts/ETbb-Bold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ETbb";
+  src: url("../fonts/ETbb-BoldItalic.otf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ETbb";
+  src: url("../fonts/ETbb-Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ETbb";
+  src: url("../fonts/ETbb-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 // -------------- THEME SWITCHER -------------- //
 @mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight, $--red) {
   background-color: $--bg-color;
@@ -58,10 +88,8 @@
   }
 
   code:not(pre > code) {
-    font-family: monospace;
     color: $--highlight;
   }
-
 
   table,
   th,
@@ -121,9 +149,9 @@ html {
 }
 
 body {
-  font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", "Times New Roman", serif;
+  font-family: "ETbb", Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", "Times New Roman", serif;
   font-kerning: auto;
-  font-size: 16px;
+  font-size: 18px;
   font-optical-sizing: auto;
   font-size-adjust: none;
   line-height: 26px;
@@ -318,3 +346,8 @@ details[open] summary {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+code, pre, kbd, samp {
+  font-family: "JetBrains Mono", monospace;
+}
+
