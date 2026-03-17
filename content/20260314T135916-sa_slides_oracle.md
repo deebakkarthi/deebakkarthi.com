@@ -1,0 +1,93 @@
+---
+title: Oracle
+date:  2026-03-14T13:59:16-04:00
+tags:
+mathjax: false
+---
+# Questions
+- Describe oracle as a programming entity. Is it a function, variable, class ?
+	- It can be modeled as function `f(input) -> output` that gives us the expected output
+- Is it easier or harder than input generation?
+	- Much harder
+- What are some desirable qualities for an oracle?
+	- Cheap
+	- High precision (Detected failures are all true. No false positives) (Complete)
+	- High recall (Detects all faults) (Sound)
+		- Read [20260128T080217-course_intro](20260128T080217-course_intro.md)
+- What are some oracle types
+	- Humans
+	- Implied Properties
+	- Specifications
+		- Models
+		- Metamorphic Properties
+	- Artefacts of execution
+		- Regression tests
+		- Competition
+- What are the pros and cons of human oracles?
+	- Very high cost
+	- Probably Precise
+	- Not the best recall
+- Are humans precise? How is their recall?
+	- Humans are precise. Meaning if they tell you something is a fault, it most probably is
+	- But they are highly unlikely to catch all possible faults. Hence not the best recall
+- Give an example for implicit expected properties?
+	- Don't crash
+	- No memory bugs
+	- No hang
+- Is calling them properties appropriate?
+	- No. They are more of *anti-properties* that we don't want
+- What makes implicit expected properties so popular?
+	- They are really really cheap
+- What are two types of specification oracles
+	- Model based
+	- Metamorphic properties
+- Give the process for a model based oracle
+	- Build Model
+	- Generate test inputs
+	- Add acceptable output states
+	- Compare model output vs program
+- What are some representations used for modeling software?
+	- FSM
+	- Mobile wireframe
+- When are model based systems good?
+	- Only as good as the model
+	- Really cheap if you already have a good model
+	- Precise models often over approximate
+- Mention the possibilities of the system's correctness when the output matches/doesn't match depending on model quality
+	- `System == Model`
+		- Low resolution models may not catch the correct behavior
+	- `System != Model`
+		- System is likely incorrect
+		- Provides opportunity to correct the model if it is doing some over-approximation
+- How do you test something when you don't the correct answer yourself?
+	- Using metamorphic properties
+- What is the mathematical description of metamorphic testing?
+	- Assume you have a function `f` and some input `i`
+	- If `f(i) = g` then `f(p(i)) = q(g)`
+	- Attempts to find relations between input/output pairs
+- When is metamorphic testing cost-effective?
+	- Applicable to a large number of input
+	- Coming up with these properties is a manual job
+- What is the assumption that we make when we are using a competitor as our oracle?
+	- Their implementation is golden
+	- We want to replicate their features
+	- We have similar features
+- Mention when it no longer makes sense to use a competitor?
+	- As features diverge
+- What is the simplest way to extract an oracle from a set of execution traces?
+	- Have a set of patterns
+	- Match those patterns against all variables at all points of the trace
+	- Keep the patterns that hold true in all traces
+- Give some example of patterns that can be used for rule mining?
+	- `foo > 0`
+	- `foo != 0`
+	- `foo != NULL`
+	- `foo == SOME_CONSTANT`
+- What are some cons of rule mining?
+	- Only as good as the execution trace
+	- Only as good as the pattern set
+	- Faults may propagate
+- If there is a fault in the program, how would you detect it in the mined rules?
+	- We cannot. Faults are propagated.
+- Is rule mining exhaustive?
+	- No. There is an upper bound placed by how expressive our execution traces and the patterns are.
