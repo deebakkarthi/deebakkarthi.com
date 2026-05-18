@@ -1,8 +1,8 @@
 [
-  "table-editor-obsidian",
   "obsidian-zotero-desktop-connector",
   "obsidian-pandoc-reference-list",
   "highlightr-plugin",
   "templater-obsidian",
-  "homepage"
+  "homepage",
+  "table-editor-obsidian"
 ]

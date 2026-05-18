@@ -1,5 +1,8 @@
 baseURL = 'https://deebakkarthi.com/'
-languageCode = 'en-us'
+defaultContentLanguage = 'en-us'
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+disableLanguages = []
 title = 'Deebakkarthi Chinnasame Rani'
 theme = 'nostyleplease'
 

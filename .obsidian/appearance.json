@@ -1,7 +1,7 @@
 {
-  "interfaceFontFamily": "Lucida Grande",
-  "textFontFamily": "Lucida Grande",
-  "monospaceFontFamily": "SF Mono",
+  "interfaceFontFamily": "Aporetic Sans",
+  "textFontFamily": "Aporetic Sans",
+  "monospaceFontFamily": "Aporetic Sans Mono",
   "baseFontSize": 20,
   "enabledCssSnippets": [
     "bigger-latex"
