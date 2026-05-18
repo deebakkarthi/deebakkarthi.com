@@ -13,7 +13,11 @@
     <li>
         <p>
         <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}"></time>
-        {{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.Title}} </a>
+	{{ if .Title }}
+		{{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.Title}} </a>
+	{{ else }}
+		{{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.Permalink}} </a>
+	{{ end }}
         </p>
     </li>
     {{end}}
