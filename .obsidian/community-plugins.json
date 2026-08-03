@@ -4,5 +4,6 @@
   "highlightr-plugin",
   "templater-obsidian",
   "homepage",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-timestamper"
 ]
