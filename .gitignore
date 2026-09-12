@@ -12,3 +12,4 @@ content
 .obsidian/plugins/
 .pandoc/
 static/*.html
+static/*.pdf

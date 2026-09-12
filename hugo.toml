@@ -18,3 +18,5 @@ useEmbedded = "fallback"
         [markup.goldmark.renderer]
                 unsafe = true
 
+[frontmatter]
+  date = ["date", ":fileModTime" ]

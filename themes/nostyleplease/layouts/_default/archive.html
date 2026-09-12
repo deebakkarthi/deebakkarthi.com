@@ -16,7 +16,7 @@
 	{{ if .Title }}
 		{{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.Title}} </a>
 	{{ else }}
-		{{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.Permalink}} </a>
+        {{ .PublishDate.Format "January 2" }}: <a href="{{.Permalink}}">{{.File}}</a>
 	{{ end }}
         </p>
     </li>
