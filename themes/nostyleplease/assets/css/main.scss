@@ -34,7 +34,8 @@
   $--link-color,
   $--visited-link-color,
   $--highlight,
-  $--red
+  $--red,
+  $--magenta
 ) {
   background-color: $--bg-color;
 
@@ -111,10 +112,46 @@
   blockquote {
     border: thin solid $--primary-text-color;
   }
+
+  blockquote.alert {
+    padding: 0px 0px 16px 0px;
+  }
+
+  .alert-theorem {
+    border: thin solid $--magenta;
+  }
+
+  .alert-question {
+    border: thin solid $--red;
+  }
+
+  .alert-heading {
+    padding: 5px 5px 2px 5px;
+  }
+
+  .alert-heading-theorem{
+    background: $--magenta;
+    border-bottom: thin solid $--magenta;
+  }
+
+  .alert-heading-question{
+    background: $--red;
+    border-bottom: thin solid $--red;
+  }
+
+  .alert-body {
+    padding: 2px 5px 5px 5px;
+  }
 }
 
-// bg-color,primary-text-color,secondary-text-color,link-color,visited-link-color,highlight
-
+// bg-color,
+// primary-text-color,
+// secondary-text-color,
+// link-color,
+// visited-link-color,
+// highlight,
+// red,
+// magenta
 @mixin dark-appearance {
   @include theme(
     #000000,
@@ -123,7 +160,8 @@
     #2fafff,
     #6ae4b9,
     #f78fe7,
-    #ff5f59
+    #ff5f59,
+    #00422a
   ); // modus-vivendi
 }
 
@@ -135,7 +173,8 @@
     #338fff,
     #008900,
     #ff66ff,
-    #ff5f5f
+    #ff5f5f,
+    #feacd0
   ); // modus-operandi
 }
 
