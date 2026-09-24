@@ -7,7 +7,7 @@ resources/
 .hugo_build.lock
 .DS_Store
 scripts/priv.sh
-content
+content/
 .obsidian/workspace.json
 .obsidian/plugins/
 .pandoc/
