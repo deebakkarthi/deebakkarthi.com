@@ -18,3 +18,18 @@ mathjax: false
 - `yacc` parser is usually not as fast as a hand written one
 	- But the ease of use outweighs this performance hit
 	- You also cannot be sure that your hand written parser only recognizes the grammar that you provided and nothing else.
+
+# Structure of a lex program
+```lex
+DEFINITIONS
+%%
+RULES
+%%
+USER SUBROUTINES
+```
+
+# `lex` disambiguation rules
+- Patterns only match a string **once**
+- If multiple rules match the current input, the rule with the longest matching prefix is selected.
+
+These two rules are enough to have an unambiguous specification.
