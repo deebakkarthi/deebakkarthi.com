@@ -16,6 +16,9 @@ tags:
 - [20260721T141347-svabench_utils](20260721T141347-svabench_utils.md)
 - [20260912T141636-ice_moc](20260912T141636-ice_moc.md)
 # Notes
+- [20261002T104839-svabench_workflow](20261002T104839-svabench_workflow.md)
+- [20261002T102851-claude_reasoning_traces](20261002T102851-claude_reasoning_traces.md)
+- [20260929T103142-meeting_with_kevin](20260929T103142-meeting_with_kevin.md)
 - [20260924T162615-meeting_with_tommy](20260924T162615-meeting_with_tommy.md)
 - [20260910T071111-meeting_with_tommy](20260910T071111-meeting_with_tommy.md)
 - [20260907T223436-meeting_with_kevin](20260907T223436-meeting_with_kevin.md)

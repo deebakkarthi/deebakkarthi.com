@@ -1,10 +1,11 @@
 {
   "interfaceFontFamily": "Aporetic Sans",
-  "textFontFamily": "Aporetic Sans",
-  "monospaceFontFamily": "Aporetic Sans Mono",
-  "baseFontSize": 20,
+  "textFontFamily": "CodeNewRoman Nerd Font Mono",
+  "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
+  "baseFontSize": 22,
   "enabledCssSnippets": [
     "bigger-latex"
   ],
-  "showRibbon": false
+  "showRibbon": false,
+  "translucency": true
 }
