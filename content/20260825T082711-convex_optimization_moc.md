@@ -13,7 +13,7 @@ mathjax: false
 - [2026-09-01](20260923T190015-cvxopt_scribe.md)
 - [2026-09-10](20260910T111532-cvxopt_scribe.md)
 - [2026-09-22](20260922T130510-cvxopt_scribe.md)
-- 
+- [2026-09-24](20261003T124148-cvxopt_scribe.md)
 
 # Readings
 - [2026-08-25: B&V Ch. 1](20260825T082800-convex_opt_reading_bv_ch_1.md)

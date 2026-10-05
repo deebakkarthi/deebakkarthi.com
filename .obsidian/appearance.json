@@ -4,7 +4,8 @@
   "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
   "baseFontSize": 22,
   "enabledCssSnippets": [
-    "bigger-latex"
+    "bigger-latex",
+    "no-line-wrap"
   ],
   "showRibbon": false,
   "translucency": true
