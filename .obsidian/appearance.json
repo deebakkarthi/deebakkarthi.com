@@ -1,12 +1,14 @@
 {
-  "interfaceFontFamily": "Aporetic Sans",
+  "interfaceFontFamily": "",
   "textFontFamily": "CodeNewRoman Nerd Font Mono",
   "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
   "baseFontSize": 22,
   "enabledCssSnippets": [
     "bigger-latex",
-    "no-line-wrap"
+    "separate-fonts"
   ],
   "showRibbon": false,
-  "translucency": true
+  "translucency": true,
+  "cssTheme": "",
+  "accentColor": ""
 }
