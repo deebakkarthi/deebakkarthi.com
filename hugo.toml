@@ -1,22 +1,32 @@
-baseURL = 'https://deebakkarthi.com/'
-defaultContentLanguage = 'en-us'
+baseURL = "https://deebakkarthi.com/"
+defaultContentLanguage = "en-us"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = false
 disableLanguages = []
-title = 'Deebakkarthi Chinnasame Rani'
-theme = 'nostyleplease'
+title = "Deebakkarthi Chinnasame Rani"
+theme = "nostyleplease"
 
+[markup]
+[markup.goldmark]
 [markup.goldmark.renderHooks.image]
 useEmbedded = "fallback"
 
 [markup.goldmark.renderHooks.link]
 useEmbedded = "fallback"
 
-[markup]
-        [markup.highlight]
-                noClasses=false
-        [markup.goldmark.renderer]
-                unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [["$$", "$$"]]
+inline = [["$", "$"]]
+
+[markup.highlight]
+noClasses = false
 
 [frontmatter]
-  date = ["date", ":fileModTime" ]
+date = ["date", ":fileModTime"]

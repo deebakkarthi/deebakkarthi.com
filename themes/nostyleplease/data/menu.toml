@@ -1,11 +1,11 @@
 [[entries]]
 title = "Recent posts"
 
-  [entries.post_list]
-  limit = 10 
-  show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "archive"
+[entries.post_list]
+limit = 10
+show_more = true
+show_more_text = "See archive..."
+show_more_url = "archive"
 
 [[entries]]
 title = "Tags"
