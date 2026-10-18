@@ -10,5 +10,6 @@
   "showRibbon": false,
   "translucency": true,
   "cssTheme": "",
-  "accentColor": ""
+  "accentColor": "",
+  "theme": "obsidian"
 }
