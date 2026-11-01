@@ -1,27 +1,27 @@
 @font-face {
-  font-family: "ETbb";
-  src: url("../fonts/ETbb-Bold.otf") format("truetype");
+  font-family: "EBGaramond";
+  src: url("../fonts/EBGaramond-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "ETbb";
-  src: url("../fonts/ETbb-BoldItalic.otf") format("truetype");
+  font-family: "EBGaramond";
+  src: url("../fonts/EBGaramond-BoldItalic.otf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "ETbb";
-  src: url("../fonts/ETbb-Italic.otf") format("truetype");
+  font-family: "EBGaramond";
+  src: url("../fonts/EBGaramond-Italic.otf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "ETbb";
-  src: url("../fonts/ETbb-Regular.otf") format("truetype");
+  font-family: "EBGaramond";
+  src: url("../fonts/EBGaramond-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -205,9 +205,9 @@ html {
 }
 
 body {
-  font-family: "ETbb", serif;
+  font-family: "EBGaramond", serif;
   font-kerning: auto;
-  font-size: 20px;
+  font-size: 22px;
   font-optical-sizing: auto;
   font-size-adjust: none;
   line-height: 1.45;

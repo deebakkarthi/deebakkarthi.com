@@ -30,3 +30,7 @@ noClasses = false
 
 [frontmatter]
 date = ["date", ":fileModTime"]
+
+[security]
+  allowContent = ['! ^text/html$']
+
